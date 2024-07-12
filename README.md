@@ -1,2 +1,2 @@
 # wongkara.github.io
-My personal website and portfolio.
+My [personal website](wongkara.github.io).
