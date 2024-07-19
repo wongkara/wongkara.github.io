@@ -1,5 +1,7 @@
 body {
-  animation: pulse 10s infinite;
+  /* animation: pulse 10s infinite; */
+  background-color: #34E89E;
+  color: #0F3443;
   font-family: 'Fira Mono'; 
   font-size: 24 px;
   text-align: center
@@ -10,6 +12,7 @@ audio {
 }
 
 button {
+  size: fixed;
   font-size: 16px;
   color: #eee;
   position: fixed;
@@ -40,11 +43,11 @@ button.fade:hover {
 }
 
 
-@keyframes pulse {
+/* @keyframes pulse {
   0%, 100% {
     background-color: #0F3443;
   }
   50% {
     background-color: #34E89E;
   }
-}
+} */
