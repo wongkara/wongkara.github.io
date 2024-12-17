@@ -7,6 +7,8 @@
     <title>Kara Wong | Personal Website</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="images/favicon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400&display=swap" rel="stylesheet">
+
     <style>
         /* General Reset */
         * {
@@ -17,9 +19,13 @@
         }
 
         body {
-            line-height: 1.6;
-            color: #333;
+            background-color: #34E89E;
+            color: #000000;
+            font-family: 'Fira Mono', monospace;
+            font-size: 24px;
         }
+
+
 
         a {
             text-decoration: none;
@@ -111,6 +117,17 @@
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
+        .experience-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+
+        .experience-item img:hover {
+            transform: scale(1.05);
+        }
+
         /* Contact Section */
         .contact ul {
             display: flex;
@@ -168,6 +185,11 @@
                 <li>Developed a Python script to collect and analyze sensor data using Raspberry Pi GPIO.</li>
                 <li>Tested IoT prototypes for net-zero building automation systems.</li>
                 <li>Presented findings at the Spring Research Symposium.</li>
+                <li>
+                    <a href="images/KLW_MRADS_Poster.pdf" target="_blank">
+                        <img src="images/poster-thumbnail.png" alt="MRADS Symposium Poster" title="View Poster">
+                    </a>
+                </li>
             </ul>
         </div>
         <div class="experience-item">
