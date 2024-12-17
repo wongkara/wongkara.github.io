@@ -21,7 +21,7 @@
             background-color: #34E89E;
             color: #000000;
             font-family: 'Fira Mono', monospace;
-            font-size: 24px;
+            font-size: 20px; /* Reduced font size */
             text-align: center;
         }
 
@@ -66,36 +66,6 @@
             font-weight: bold;
         }
 
-        /* Hero Section */
-        .hero {
-            background: url('images/hero-background.jpg') no-repeat center center/cover;
-            height: 100vh;
-            color: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-
-        .hero-content h1 {
-            font-size: 3em;
-            margin-bottom: 10px;
-        }
-
-        .cta-button {
-            display: inline-block;
-            background: #f4b400;
-            color: #fff;
-            padding: 10px 20px;
-            border-radius: 5px;
-            margin-top: 10px;
-            transition: background 0.3s ease;
-        }
-
-        .cta-button:hover {
-            background: #d39600;
-        }
-
         /* Section Styles */
         section {
             padding: 40px 20px;
@@ -132,34 +102,12 @@
             font-size: 1rem;
         }
 
-        .experience-item img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 5px;
-            transition: transform 0.3s ease;
-        }
-
-        .experience-item img:hover {
-            transform: scale(1.05);
-        }
-
-        /* Contact Section */
-        .contact ul {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-
         /* Footer */
         footer {
             background: #333;
             color: #fff;
             text-align: center;
             padding: 10px 0;
-        }
-
-        footer p {
-            margin: 0;
         }
     </style>
 </head>
@@ -170,7 +118,7 @@
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <li><a href="#extracurriculars">Extracurriculars</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -193,20 +141,49 @@
 
     <!-- Experience Section -->
     <section id="experience" class="experience">
-        <h2>Experience</h2>
+        <h2>Professional Experience</h2>
         <div class="experience-item">
             <h3>Peer Mentor</h3>
             <p>Michigan Research and Discovery Scholars | Apr 2024 - Present</p>
             <ul>
-                <li>Planned monthly connection events to engage first-year scholars.</li>
-                <li>Supported mentees through 1-on-1 check-ins for college transition.</li>
+                <li>Planned monthly events for first-year scholars to build community.</li>
+                <li>Supported mentees through semesterly check-ins.</li>
+            </ul>
+        </div>
+        <div class="experience-item">
+            <h3>Recruitment Ambassador</h3>
+            <p>Michigan Research and Discovery Scholars | Jan 2024 - Apr 2024</p>
+            <ul>
+                <li>Recruited prospective applicants through campus events and social media content.</li>
             </ul>
         </div>
         <div class="experience-item">
             <h3>Undergraduate Researcher</h3>
             <p>University of Michigan | Sep 2023 - Apr 2024</p>
             <ul>
-                <li>Designed IoT prototypes and Python scripts for sensor data collection.</li>
+                <li>Designed IoT prototypes and developed Python scripts for sensor data collection.</li>
+                <li>Presented research outcomes at the Spring Research Symposium.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Extracurricular Section -->
+    <section id="extracurriculars" class="experience">
+        <h2>Extracurriculars</h2>
+        <div class="experience-item">
+            <h3>Marketing & Social Media Chair</h3>
+            <p>University of Michigan German Club E-Board | Jun 2024 - Present</p>
+            <ul>
+                <li>Built a website in HTML/CSS and JavaScript to promote club events.</li>
+                <li>Managed social media to boost engagement and activity attendance.</li>
+            </ul>
+        </div>
+        <div class="experience-item">
+            <h3>Object Detection Sublead</h3>
+            <p>M-Fly Aero Design | Nov 2023 - Present</p>
+            <ul>
+                <li>Developed image preprocessing scripts for object detection tasks.</li>
+                <li>Refined OpenCV and YOLO-based algorithms for competition aircraft.</li>
             </ul>
         </div>
     </section>
