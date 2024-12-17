@@ -1,58 +1,98 @@
+<!-- index.html -->
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
 <head>
-    <!-- meta -->
-    <meta charset='UTF-8'>
-    <title>Kara Wong</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-
-    <!-- audios -->
-    <audio src="https://github.com/wongkara/wongkara.github.io/blob/main/website/audio/ScreenSaver.mp3?raw=true"></audio>
-
-    <!-- favicon -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    
-    <!-- google fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Fira Mono' rel='stylesheet'>
-    
-    <!-- styles -->
-    <link rel='stylesheet' href='website/style.css'>
-
-    <!-- scripts -->
-    <script src='website/scripts/index.js'defer></script>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kara Wong | Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/favicon.png" type="image/png">
 </head>
 <body>
-    <main class='flight-path'>
-        <h1 class = 'main-title'>Hi, I'm Kara Wong</h1>
-        
-        <div class='about'>
-            <h2 class='section-title'>About Me</h2>
-            <p class = 'description'>Computer Engineering Student at the University of Michigan</p>
-        </div>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">Kara Wong</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <div class='skills'>
-            <h2 class='section-title'>Skills</h2>
-            <p class = 'description'>C++, CSS, HTML, Java, JavaScript, Python</p>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm Kara Wong</h1>
+            <p>A Computer Engineering Student passionate about software development, IoT research, and collaborative innovation.</p>
+            <a href="#contact" class="cta-button">Get In Touch</a>
         </div>
-        <div class='projects'>
-            <h2 class='section-title'>Projects</h2>
-            <p class = 'description'>
-                22/26 Midwest: Worked as a research intern under Lars Junghans, PhD through the Undergraduate Research Opportunity Program at the University of Michigan.
-                Designed IoT prototypes for a net-zero building automation system. 
-                Developed a Python program to collect CO₂, humidity, and temperature sensor data via Raspberry Pi GPIO. 
-                Aided MQTT implementation and window actuator fabrication. 
-                Created poster summarizing research outcomes and presented findings at Spring Research Symposium.
-            </p>
-        </div>     
-    </main>
-        <div>
-            <a href='https://github.com/wongkara' target='_blank'><img src='./website/icons/github.svg' alt='GitHub'></a>
-            <a href='https://linkedin.com/in/wongkara' target='_blank'><img src='./website/icons/linkedin.svg' alt='LinkedIn'></a>
-            <a href='mailto:karawong@umich.edu' target='_blank'><img src='./website/icons/gmail.svg' alt='Email'></a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>I am a Computer Engineering student at the University of Michigan with hands-on experience in programming languages such as C++, Python, JavaScript, and hardware integration. I enjoy tackling real-world challenges and collaborating with diverse teams to create impactful solutions.</p>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <h2>Experience</h2>
+        <div class="experience-item">
+            <h3>Undergraduate Researcher</h3>
+            <p>University of Michigan | Sep 2023 - Apr 2024</p>
+            <ul>
+                <li>Developed a Python script to collect and analyze sensor data using Raspberry Pi GPIO.</li>
+                <li>Tested IoT prototypes for net-zero building automation systems.</li>
+                <li>Presented findings at the Spring Research Symposium.</li>
+            </ul>
         </div>
-    </body>
-    <button id='button'>
-            <i class='fas fa-volume-up'></i>
-    </button>
+        <div class="experience-item">
+            <h3>Software Subteam Object Detection Sublead</h3>
+            <p>M-Fly Aero Design | Nov 2023 - Present</p>
+            <ul>
+                <li>Preprocessed image data for object detection tasks in Python.</li>
+                <li>Refined OpenCV and YOLO-based algorithms for autonomous aircraft.</li>
+            </ul>
+        </div>
+        <div class="experience-item">
+            <h3>Peer Mentor</h3>
+            <p>Michigan Research and Discovery Scholars | Apr 2024 - Present</p>
+            <ul>
+                <li>Planned monthly events to engage first-year scholars and build a research-based community.</li>
+                <li>Conducted 1-on-1 mentorship to support student transitions.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project-item">
+            <h3>Net-Zero IoT Automation</h3>
+            <p>Developed and tested Python-based scripts for IoT sensor systems.</p>
+        </div>
+        <div class="project-item">
+            <h3>Computer Vision for Autonomous Aircraft</h3>
+            <p>Implemented object detection and classification using Python and OpenCV.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out for collaborations or questions:</p>
+        <ul>
+            <li>Email: <a href="mailto:karawong@umich.edu">karawong@umich.edu</a></li>
+            <li>LinkedIn: <a href="https://linkedin.com/in/wongkara">linkedin.com/in/wongkara</a></li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Kara Wong. All Rights Reserved.</p>
+    </footer>
+</body>
 </html>
