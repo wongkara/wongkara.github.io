@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="images/favicon.png" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400&display=swap" rel="stylesheet">
-
     <style>
         /* General Reset */
         * {
@@ -23,9 +22,8 @@
             color: #000000;
             font-family: 'Fira Mono', monospace;
             font-size: 24px;
+            text-align: center;
         }
-
-
 
         a {
             text-decoration: none;
@@ -115,6 +113,23 @@
             border: 1px solid #ddd;
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin: 20px auto;
+        }
+
+        .skill-item {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1rem;
         }
 
         .experience-item img {
@@ -156,6 +171,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </header>
@@ -179,39 +195,34 @@
     <section id="experience" class="experience">
         <h2>Experience</h2>
         <div class="experience-item">
-            <h3>Undergraduate Researcher</h3>
-            <p>University of Michigan | Sep 2023 - Apr 2024</p>
+            <h3>Peer Mentor</h3>
+            <p>Michigan Research and Discovery Scholars | Apr 2024 - Present</p>
             <ul>
-                <li>Developed a Python script to collect and analyze sensor data using Raspberry Pi GPIO.</li>
-                <li>Tested IoT prototypes for net-zero building automation systems.</li>
-                <li>Presented findings at the Spring Research Symposium.</li>
-                <li>
-                    <a href="images/KLW_MRADS_Poster.pdf" target="_blank">
-                        <img src="images/poster-thumbnail.png" alt="MRADS Symposium Poster" title="View Poster">
-                    </a>
-                </li>
+                <li>Planned monthly connection events to engage first-year scholars.</li>
+                <li>Supported mentees through 1-on-1 check-ins for college transition.</li>
             </ul>
         </div>
         <div class="experience-item">
-            <h3>Software Subteam Object Detection Sublead</h3>
-            <p>M-Fly Aero Design | Nov 2023 - Present</p>
+            <h3>Undergraduate Researcher</h3>
+            <p>University of Michigan | Sep 2023 - Apr 2024</p>
             <ul>
-                <li>Preprocessed image data for object detection tasks in Python.</li>
-                <li>Refined OpenCV and YOLO-based algorithms for autonomous aircraft.</li>
+                <li>Designed IoT prototypes and Python scripts for sensor data collection.</li>
             </ul>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <h2>Projects</h2>
-        <div class="project-item">
-            <h3>Net-Zero IoT Automation</h3>
-            <p>Developed and tested Python-based scripts for IoT sensor systems.</p>
-        </div>
-        <div class="project-item">
-            <h3>Computer Vision for Autonomous Aircraft</h3>
-            <p>Implemented object detection and classification using Python and OpenCV.</p>
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="skill-item">C++</div>
+            <div class="skill-item">Python</div>
+            <div class="skill-item">JavaScript</div>
+            <div class="skill-item">Assembly</div>
+            <div class="skill-item">HTML/CSS</div>
+            <div class="skill-item">Git</div>
+            <div class="skill-item">Unix</div>
+            <div class="skill-item">Bash</div>
         </div>
     </section>
 
