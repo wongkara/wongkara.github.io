@@ -148,7 +148,7 @@ Experience Section (Job Listings)
   background-color: #222; /* Dark gray background */
   padding: 20px;
   border-radius: 10px; /* Smooth rounded corners */
-  width: 80%; /* Matches the width of buttons and text */
+  width: 90%; /* Matches the width of buttons and text */
   max-width: 600px; /* Keeps it from being too wide */
   transition: transform 0.3s ease-in-out;
   text-align: left;
@@ -276,4 +276,45 @@ GitHub Repository Button Styling
 .repo-button:hover {
   background-color: #111;
   color: #fff;
+}
+
+#IFI-logo {
+  display: block;
+  margin: 0 auto;
+  width: 200px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  border: 1px solid #fff;
+  border-radius: 10%;
+}
+
+.logo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px; /* Fixed width for the square */
+  height: 200px; /* Fixed height for the square */
+  margin: 0 auto;
+  border: 1px solid #fff;
+  border-radius: 10%;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+#MFLY-logo {
+  max-width: 90%;
+  max-height: 90%;
+  height: auto;
+  width: auto;
+}
+
+.light-mode #MFLY-logo {
+  filter: invert(1);
+}
+
+#UMich-logo {
+  display: block;
+  margin: 0 auto;
+  width: 200px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  border: 1px solid #fff;
+  border-radius: 10%;
 }

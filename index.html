@@ -9,8 +9,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
         
         <!-- Link to external styles and scripts -->
-        <link rel="stylesheet" href="styles.css">
-        <script defer src="script.js"></script> <!-- Ensures script runs after DOM loads -->
+        <link rel="stylesheet" href="website/styles.css">
+        <script defer src="website/script.js"></script> <!-- Ensures script runs after DOM loads -->
     </head>
 
 <body>
@@ -71,17 +71,15 @@
     <section id="experience">
         <h2>Experience</h2>
 
-        <!-- Research Intern Position -->
+        <!-- Innovation for Impact Lore -->
         <div class="job">
-            <h3>Research Intern</h3>
-            <p>University of Michigan | Sep 2023 - Apr 2024</p>
+            <h3>Software Developer</h3>
+            <p>Innovation for Impact | Jan 2025 - Present</p>
             <ul>
-                <li>Designed and tested IoT prototypes for an efficient net-zero building automation system under professor guidance</li>
-                <li>Developed a Python script to collect CO2, humidity, and temperature sensor data via Raspberry Pi GPIO</li>
-                <li>Selected specialized hardware to be purchased for project purposes</li>
-                <li>Aided research team in preliminary MQTT implementation and window actuator fabrication</li>
-                <li>Created poster summarizing research outcomes and presented findings at Spring Research Symposium</li>
-            </ul>  
+                <li>Building Lore, a mobile app enabling friends to capture, share, and reminisce on memories, quotes, photos, and more</li>
+                <li>Learning React Native, Node.js, Express.js, and MongoDB</li>
+            </ul>   
+            <img src="website/icons/IFI.JPEG" alt="Innovation for Impact Logo" id="IFI-logo" />           
         </div>
 
         <!-- Object Detection Lead -->
@@ -91,10 +89,25 @@
             <ul>
                 <li>Developed a Python script to preprocess and format image data into the COCO dataset format, enabling its 
                     use in object detection and classification tasks for autonomous competition aircraft</li>
-                <li>Collaboratively troubleshooting and refining OpenCV and YOLO computer vision algorithms in Python</li>
-                <li>Leading weekly meetings with subteam members to discuss goals and progress</li>
-            </ul>              
+                <li>Troubleshooting and refining OpenCV and YOLO computer vision algorithms in Python</li>
+            </ul>
+            <div class="logo-wrapper">
+                <img src="website/icons/MFLY.png" alt="M-Fly Logo" id="MFLY-logo" />
+            </div>             
         </div>
+
+        <!-- Research Intern Position -->
+        <div class="job">
+            <h3>Research Intern</h3>
+            <p>University of Michigan | Sep 2023 - Apr 2024</p>
+            <ul>
+                <li>Designed and tested IoT prototypes for an efficient net-zero building automation system under professor guidance</li>
+                <li>Developed a Python script to collect CO2, humidity, and temperature sensor data via Raspberry Pi GPIO</li>
+                <li>Selected specialized hardware to be purchased for project purposes</li>
+                <li>Aided research team in preliminary MQTT implementation and window actuator fabrication</li>
+            </ul>  
+            <img src="website/icons/U-M_Logo-Hex.png" alt="University of Michigan Logo" id="UMich-logo" />    
+        </div> 
     </section>
 
     <!-- Projects Section -->
@@ -108,6 +121,7 @@
               Developed a prototype of the existing 22/26’s climate management system that can be 
               implemented in a carbon-neutral home tailored to the climate and prevailing construction 
               techniques of the Midwestern United States. Utilized Raspberry Pi and MQTT technologies.
+              Created poster summarizing research outcomes and presented findings at Spring Research Symposium.
             </p>
             <!-- Clickable Thumbnail Image -->
             <img 
