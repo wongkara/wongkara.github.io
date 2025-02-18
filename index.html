@@ -2,126 +2,187 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Kara Wong - Portfolio</title>
-        
         <!-- Import Poppins font from Google Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
         
         <!-- Link to external styles and scripts -->
         <link rel="stylesheet" href="website/styles.css">
         <script defer src="website/script.js"></script> <!-- Ensures script runs after DOM loads -->
+    
+        <!-- Font Awesome for icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     </head>
 
-<body>
-    <!-- Header Section -->
-    <header>
-        <h1>Kara Wong</h1>
-        <img src="website/icons/me_prof.JPG" alt="Photo of Kara Wong" id="profile-pic" />
-        <p>Computer Engineering @ University of Michigan</p>
-        <p>Hi! I'm an aspiring Computer Engineer from Rochester Hills, MI.<br>
-            I'm interested in embedded systems, robotics, and computer vision.<br>
-            When I'm not programming, I enjoy aviation, speaking German, and staring at maps.<br>
-        </p>
-        <button id="theme-toggle">Toggle Dark Mode</button>
-    </header>
+    <body>
+        <div class="confetti-container left"></div>
+        <div class="confetti-container right"></div>
+        
+        <!-- Back to Top Button -->
+        <button id="back-to-top" class="back-to-top"><i class="fas fa-chevron-up"></i></button>
     
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2>Developer Tools</h2>
-        <div class="skills-container">
-            <button class="skill">Bash</button>
-            <button class="skill">Eclipse</button>
-            <button class="skill">Git</button>
-            <button class="skill">ModelSim</button>
-            <button class="skill">Unix</button>
-            <button class="skill">VS Code</button>
-            <button class="skill">Xcode</button>
-        </div>
-    </section>
+        <!-- Header Section -->
+        <header>
+            <h1>Hi, I'm Kara Wong!</h1>
+            
+            <div class="profile-container">
+                <img src="website/icons/me.jpeg" alt="Photo of Kara Wong" id="profile-pic" />
+                <div class="circular-text-wrapper">
+                    <div class="circular-text">
+                        <a href="#skills">Skills</a>
+                        <a href="#experience">Experience</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <p>Computer Engineering @ University of Michigan</p>
+            <p>I'm an aspiring Computer Engineer from Rochester Hills, MI.<br>
+                I'm primarily interested in embedded systems, robotics, and computer vision.<br>
+                When I'm not programming, I enjoy aviation, speaking German, and staring at maps.<br>
+            </p>
+            <button id="theme-toggle" class="moon-button"><i class="fas fa-moon"></i></button>
+            <button id="confetti-toggle" class="confetti-button"><i class="fas fa-magic"></i></button>
+            <h1 class="scroll-down">↓↓↓ scroll down ↓↓↓</h1>
+        </header>
+        
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Developer Tools</h2>
+            <div class="skills-container">
+                <button class="skill">Bash</button>
+                <button class="skill">Eclipse</button> 
+                <button class="skill">Git</button>
+                <button class="skill">ModelSim</button>
+                <button class="skill">Unix</button>
+                <button class="skill">VS Code</button>
+                <button class="skill">Xcode</button>
+            </div>
+        </section>
     
-    <section id="skills">
-        <h2>Languages</h2>
-        <div class="skills-container">
-            <button class="skill">Assembly</button>
-            <button class="skill">C</button>
-            <button class="skill">C++</button>
-            <button class="skill">HTML/CSS</button>
-            <button class="skill">Java</button>
-            <button class="skill">JavaScript</button>
-            <button class="skill">Python</button>
-            <button class="skill">Verilog</button>
-        </div>
-    </section>
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Frameworks</h2>
+            <div class="skills-container">
+                <button class="skill">Express.js</button>
+                <button class="skill">Node.js</button>
+                <button class="skill">React Native</button>
+            </div>
+        </section>
+        
+        <section id="skills">
+            <h2>Languages</h2>
+            <div class="skills-container">
+                <button class="skill">Assembly</button>
+                <button class="skill">C</button>
+                <button class="skill">C++</button>
+                <button class="skill">HTML/CSS</button>
+                <button class="skill">Java</button>
+                <button class="skill">JavaScript</button>
+                <button class="skill">Python</button>
+                <button class="skill">Verilog</button>
+            </div>
+        </section>
+        
+        <!-- Coursework Section -->
+        <section id="coursework">
+            <h2>Coursework</h2>
+            <div class="coursework-container">
+              <button class="skill">Data Structures and Algorithms</button>
+              <button class="skill">Discrete Mathematics</button>
+              <button class="skill">Computer Organization</button>
+              <button class="skill">Logic Design</button>
+              <button class="skill">Linear Algebra</button>
+              <button class="skill">Unix Tools</button>
+            </div>
+        </section>
+          
+        <!-- Experience Section -->
+        <section id="experience">
+            <h2>Experience</h2>
     
-    <!-- Coursework Section -->
-    <section id="coursework">
-        <h2>Coursework</h2>
-        <div class="coursework-container">
-          <button class="skill">Data Structures and Algorithms</button>
-          <button class="skill">Discrete Mathematics</button>
-          <button class="skill">Computer Organization</button>
-          <button class="skill">Logic Design</button>
-          <button class="skill">Linear Algebra</button>
-          <button class="skill">Unix Tools</button>
-        </div>
-    </section>
-      
-    <!-- Experience Section -->
-    <section id="experience">
-        <h2>Experience</h2>
-
-        <!-- Innovation for Impact Lore -->
-        <div class="job">
-            <h3>Software Developer</h3>
-            <p>Innovation for Impact | Jan 2025 - Present</p>
-            <ul>
-                <li>Building Lore, a mobile app enabling friends to capture, share, and reminisce on memories, quotes, photos, and more</li>
-                <li>Learning React Native, Node.js, Express.js, and MongoDB</li>
-            </ul>   
-            <img src="website/icons/IFI.jpeg" alt="Innovation for Impact Logo" id="IFI-logo" />           
-        </div>
-
-        <!-- Object Detection Lead -->
-        <div class="job">
-            <h3>Object Detection Lead</h3>
-            <p>M-Fly Aero Design | Nov 2023 - Present</p>
-            <ul>
-                <li>Developed a Python script to preprocess and format image data into the COCO dataset format, enabling its 
-                    use in object detection and classification tasks for autonomous competition aircraft</li>
-                <li>Troubleshooting and refining OpenCV and YOLO computer vision algorithms in Python</li>
-            </ul>
-            <div class="logo-wrapper">
-                <img src="website/icons/mfly.png" alt="M-Fly Logo" id="MFLY-logo" />
-            </div>             
-        </div>
-
-        <!-- Research Intern Position -->
-        <div class="job">
-            <h3>Research Intern</h3>
-            <p>University of Michigan | Sep 2023 - Apr 2024</p>
-            <ul>
-                <li>Designed and tested IoT prototypes for an efficient net-zero building automation system under professor guidance</li>
-                <li>Developed a Python script to collect CO2, humidity, and temperature sensor data via Raspberry Pi GPIO</li>
-                <li>Selected specialized hardware to be purchased for project purposes</li>
-                <li>Aided research team in preliminary MQTT implementation and window actuator fabrication</li>
-            </ul>  
-            <img src="website/icons/U-M_Logo-Hex.png" alt="University of Michigan Logo" id="UMich-logo" />    
-        </div> 
-    </section>
-
+            <!-- Innovation for Impact Lore -->
+            <div class="job">
+                <h3>Software Developer</h3>
+                <p>Innovation for Impact | Jan 2025 - Present</p>
+                <ul>
+                    <li>A mobile app powered by React Native, Node.js, Express.js, and MongoDB,
+                         designed for friends to capture, share, and relive quotes, photos, memories, and more.</li>
+                    <li>Built a personal portfolio (this website) using HTML/CSS and JavaScript</li>
+                </ul>   
+                <img src="website/icons/IFI.jpeg" alt="Innovation for Impact Logo" id="IFI-logo" />           
+            </div>
+    
+            <!-- Object Detection Lead -->
+            <div class="job">
+                <h3>Object Detection Lead</h3>
+                <p>M-Fly Aero Design | Nov 2023 - Present</p>
+                <ul>
+                    <li>Developed a Python script to preprocess and format image data into the COCO dataset format, enabling its 
+                        use in object detection and classification tasks for autonomous competition aircraft</li>
+                    <li>Troubleshooting and refining OpenCV and YOLO computer vision algorithms</li>
+                </ul>
+                <div class="logo-wrapper">
+                    <img src="website/icons/mfly.png" alt="M-Fly Logo" id="MFLY-logo" />
+                </div>             
+            </div>
+    
+            <!-- Research Intern Position -->
+            <div class="job">
+                <h3>Research Intern</h3>
+                <p>University of Michigan | Sep 2023 - Apr 2024</p>
+                <ul>
+                    <li>Designed and tested IoT prototypes for an efficient net-zero building automation system under the guidance of Dr. Lars Junghans</li>
+                    <li>Developed a Python script to collect CO2, humidity, and temperature sensor data via Raspberry Pi GPIO</li>
+                    <li>Selected specialized hardware to be purchased for project purposes</li>
+                    <li>Aided research team in preliminary MQTT implementation for node-to-node communication and window actuator fabrication</li>
+                </ul>  
+                <img src="website/icons/umich.png" alt="University of Michigan Logo" id="UMich-logo" />    
+            </div> 
+        </section>
+    
+        <!-- Projects Section -->
     <!-- Projects Section -->
     <section id="projects">
         <h2>Projects</h2>
 
-        <!-- 22/26 Midwest Project -->
+
+        <!-- Lore -->
         <div class="project">
-            <h3>22/26 Midwest: Net Zero Emission Strategy for Buildings</h3>
+            <h3>Lore (2025)</h3>
             <p>
-              Developed a prototype of the existing 22/26’s climate management system that can be 
+                A mobile app to help users share memories, quotes, and photos. 
+                Handling front-end programming with React Native and JavaScript, and back-end services using Node.js and Express.js. 
+                Designing and integrating a dynamic quote board feature and conducting usability testing to enhance user experience. 
+                Managing database with MongoDB for efficient content storage and retrieval. Collaborating with a cross-functional team 
+                on both technical and design aspects. Work in progress.
+            </p>
+            <a href="javascript:void(0);" target="_blank" class="repo-button">Check back soon to view repository!</a>
+        </div>
+
+        <!-- German Club Website -->
+        <div class="project">
+            <h3>University of Michigan German Club Website (2025)</h3>
+            <p>Building a website in HTML/CSS and JavaScript to promote the German Club’s events, interests, and purposes. 
+                Work in progress.</p>
+                <a href="javascript:void(0);" target="_blank" class="repo-button">Check back soon to view repository!</a>
+        </div>
+
+                <!-- COCO Formatting Project with GitHub Link -->
+        <div class="project">
+            <h3>COCO Formatting for Object Detection (2024)</h3>
+            <p>A Python script to preprocess and organize image data into the Common Objects in Context (COCO) dataset format, making 
+                it suitable for object detection and classification tasks in autonomous aircraft competition.</p>
+            <a href="https://github.com/wongkara/m-fly-coco-formatter/tree/main" target="_blank" class="repo-button">View Repository</a>
+        </div>    
+        
+                <!-- 22/26 Midwest Project -->
+        <div class="project">
+            <h3>22/26 Midwest: Net Zero Emission Strategy for Buildings (2024)</h3>
+            <p>
+              A Raspberry Pi and MQTT prototype of the existing 22/26 climate management system that can be 
               implemented in a carbon-neutral home tailored to the climate and prevailing construction 
-              techniques of the Midwestern United States. Utilized Raspberry Pi and MQTT technologies.
-              Created poster summarizing research outcomes and presented findings at Spring Research Symposium.
+              techniques of the Midwestern United States. Created poster summarizing research outcomes 
+              and presented findings at Spring Research Symposium.
             </p>
             <!-- Clickable Thumbnail Image -->
             <img 
@@ -132,44 +193,42 @@
             />
         </div>
 
-        <!-- COCO Formatting Project with GitHub Link -->
+        <!-- NYC WiFi Locator -->
         <div class="project">
-            <h3>COCO Formatting for Object Detection</h3>
-            <p>A Python script to preprocess and organize image data into the COCO dataset format, making 
-                it suitable for object detection and classification tasks in autonomous aircraft competition.</p>
-            <a href="https://github.com/wongkara/m-fly-coco-formatter/tree/main" target="_blank" class="repo-button">View Repository</a>
-        </div>        
-
-        <!-- German Club Website -->
-        <div class="project">
-            <h3>German Club Website</h3>
-            <p>Building a website in HTML/CSS and JavaScript to promote the club’s events, interests, and purposes. 
-                Work in progress.</p>
+            <h3>NYC Public Wi-Fi Locator (2022)</h3>
+            <p> Basic app made with JavaScript, Code.org App Lab UI, and a Kaggle dataset.
+                User inputs a valid New York City zip code, which returns a formatted list of relevant information pertaining to public 
+                Wi-Fi locations in the specified zip code area.</p>
+                <a href="https://github.com/wongkara/nyc-wifi-locator/tree/main" target="_blank" class="repo-button">View Repository</a>
+                <img src="website/icons/nyc.png" alt="NYC App Image" id="nyc-app-img" />   
         </div>
     </section>
-    
-    <!-- Modal Structure for Enlarged Images -->
-    <div id="imgModal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="modalImage">
-        <div id="caption"></div>
-    </div>
-
-    <!-- Footer with Social Links -->
-    <footer>
-        <p>Get in Touch:<p\>
-        <div class="social-icons">
-            <a href="https://github.com/wongkara" target="_blank">
-                <img src="website/icons/github.svg" alt="GitHub Icon">
-            </a>
-            <a href="https://www.linkedin.com/in/wongkara" target="_blank">
-                <img src="website/icons/linkedin.svg" alt="LinkedIn Icon">
-            </a>
-            <a href="mailto:karawong@umich.edu">
-                <img src="website/icons/gmail.svg" alt="Email Icon">
-            </a>
+        
+        <!-- Modal Structure for Enlarged Images -->
+        <div id="imgModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="modalImage">
+            <div id="caption"></div>
         </div>
-        <p>© 2025 Kara Wong. All rights reserved.</p>
-    </footer>
-</body>
+    
+        <!-- Footer with Social Links -->
+        <footer>
+            <section id="contact">
+                <h2>Contact Me</h2>
+                <h3> </h3>
+                <div class="social-icons">
+                    <a href="https://github.com/wongkara" target="_blank">
+                        <img src="website/icons/github.svg" alt="GitHub Icon">
+                    </a>
+                    <a href="https://www.linkedin.com/in/wongkara" target="_blank">
+                        <img src="website/icons/linkedin.svg" alt="LinkedIn Icon">
+                    </a>
+                    <a href="mailto:karawong@umich.edu">
+                        <img src="website/icons/gmail.svg" alt="Email Icon">
+                    </a>
+                </div>
+                <p>© 2025 Kara Wong. All rights reserved.</p>
+            </section>
+        </footer>
+    </body>
 </html>

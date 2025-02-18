@@ -1,30 +1,27 @@
-/* 
-==========================================
-Global Styles 
-- Applies to the entire webpage 
-==========================================
-*/
+/* Global Styles */
 body {
-  font-family: 'Poppins', sans-serif; /* Modern and clean font */
-  background-color: #111; /* Dark mode background */
-  color: #fff; /* Default text color */
-  text-align: center; /* Center all text by default */
+  font-family: 'Poppins', sans-serif;
+  background-color: #111;
+  color: #fff;
+  text-align: center;
   margin: 0;
   padding: 0;
-  transition: background-color 0.3s, color 0.3s; /* Smooth transition effect */
+  transition: background-color 0.3s, color 0.3s;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centers everything */
+  align-items: center;
   min-height: 100vh;
+  min-width: 320px; /* Minimum width to prevent too small window */
 }
 
-/* Headings - Ensure consistent font and weight */
+/* Headings */
 h1, h2, h3 {
   font-family: 'Poppins', sans-serif;
-  font-weight: 600; /* Bold for headings */
+  font-weight: 600;
+  color: #34E89E;
 }
 
-/* Paragraphs, buttons, and list items - Consistent font weight */
+/* Paragraphs, buttons, and list items */
 p, button, li {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
@@ -32,32 +29,26 @@ p, button, li {
 
 /* Uniform section spacing */
 section {
-  margin: 40px 0; /* Adds even spacing above and below each section */
+  margin: 40px 0;
 }
 
-/*
-==========================================
-Header Section
-==========================================
-*/
+/* Header Section */
 header {
   text-align: center;
-  padding: 40px 0; /* Even spacing at the top and bottom */
+  padding: 40px 0;
 }
 
 /* Profile picture styling */
 #profile-pic {
-  width: 300px; /* Adjust as needed */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 50%; /* Circular shape */
+  width: 80%; /* Use percentage for responsive scaling */
+  max-width: 400px;
+  height: auto;
+  border-radius: 50%;
   margin: 20px 0;
+  border: #222 solid 4px;
 }
 
-/*
-==========================================
-Button Styling
-==========================================
-*/
+/* Button Styling */
 button {
   background: none;
   border: 1px solid #fff;
@@ -66,8 +57,8 @@ button {
   cursor: pointer;
   margin-top: 10px;
   transition: background-color 0.3s, color 0.3s;
-  border-radius: 20px; /* Rounded buttons */
-  font-weight: 600; /* Slightly bolder text */
+  border-radius: 20px;
+  font-weight: 600;
 }
 
 button:hover {
@@ -75,22 +66,16 @@ button:hover {
   color: #111;
 }
 
-/*
-==========================================
-Light Mode Styling 
-==========================================
-*/
+/* Light Mode Styling */
 .light-mode {
   background-color: #fff;
   color: #111;
 }
 
-/* Adjust project and job background colors in light mode */
 .light-mode .project, .light-mode .job {
-  background-color: #ddd;
+  background-color:  rgba(185, 120, 255, 0.8);;
 }
 
-/* Adjust button styles in light mode */
 .light-mode button {
   border: 1px solid #111;
   color: #111;
@@ -101,73 +86,56 @@ Light Mode Styling
   color: #fff;
 }
 
-/* If in light mode, reset social media icon colors */
 .light-mode .social-icons a img {
   filter: none;
 }
 
-/*
-==========================================
-Skills & Coursework Containers
-==========================================
-*/
+/* Skills & Coursework Containers */
 .skills-container, .coursework-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 15px; /* Consistent spacing */
+  gap: 15px;
   margin-top: 20px;
 }
 
-/* Make coursework buttons have a fixed width */
 .coursework-container .skill {
-  width: 100%; /* Ensures buttons fit within grid */
-  max-width: 250px; /* Limits max width */
+  width: 100%;
+  max-width: 250px;
   text-align: center;
   padding: 10px;
-  border-radius: 10px; /* Softer corners */
+  border-radius: 10px;
 }
 
-/*
-==========================================
-Experience Section (Job Listings)
-==========================================
-*/
+/* Experience Section (Job Listings) */
 .job ul {
-  padding-left: 0; /* Removes default browser padding */
-  list-style: none; /* Removes bullet points */
+  padding-left: 0;
+  list-style: none;
 }
 
 .job ul li {
-  margin-bottom: 10px; /* Adds uniform spacing between bullet points */
+  margin-bottom: 10px;
 }
 
-
-/* Ensure job and project boxes align with other elements */
 .job, .project {
-  background-color: #222; /* Dark gray background */
+  background-color: #222;
   padding: 20px;
-  border-radius: 10px; /* Smooth rounded corners */
-  width: 90%; /* Matches the width of buttons and text */
-  max-width: 600px; /* Keeps it from being too wide */
+  border-radius: 10px;
+  width: 90%;
+  max-width: 650px;
   transition: transform 0.3s ease-in-out;
   text-align: left;
-  margin: 20px auto; /* Centers the element horizontally */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Optional: subtle shadow */
+  margin: 20px auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-
-/*
-==========================================
-Project Posters (Thumbnails)
-==========================================
-*/
+/* Project Posters (Thumbnails) */
 .project-poster {
   display: block;
   width: 100%;
-  max-width: 300px; /* Adjust to control default thumbnail size */
+  max-width: 300px;
   height: auto;
-  margin: 20px auto; /* Center the image */
+  margin: 20px auto;
   cursor: pointer;
   border: 2px solid #fff;
   border-radius: 10px;
@@ -175,35 +143,29 @@ Project Posters (Thumbnails)
 }
 
 .project-poster:hover {
-  transform: scale(1.05); /* Slight zoom effect on hover */
+  transform: scale(1.05);
 }
 
-/*
-==========================================
-Modal for Enlarged Image Viewing
-==========================================
-*/
+/* Modal for Enlarged Image Viewing */
 .modal {
-  display: none; /* Hidden by default */
+  display: none;
   position: fixed;
   z-index: 999;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent black */
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
-/* Modal Content (Enlarged Image) */
 .modal-content {
   display: block;
   margin: 60px auto;
   width: 80%;
-  max-width: 800px; /* Limit size */
+  max-width: 800px;
 }
 
-/* Caption text below modal image */
 #caption {
   text-align: center;
   color: #ccc;
@@ -212,7 +174,6 @@ Modal for Enlarged Image Viewing
   max-width: 800px;
 }
 
-/* Close button for modal */
 .close {
   position: absolute;
   top: 20px;
@@ -227,20 +188,15 @@ Modal for Enlarged Image Viewing
   color: #bbb;
 }
 
-/*
-==========================================
-Footer & Social Icons
-==========================================
-*/
+/* Footer & Social Icons */
 footer {
   padding: 20px;
   font-size: 14px;
   width: 100%;
   text-align: center;
-  margin-top: 50px; /* Add spacing before footer */
+  margin-top: 50px;
 }
 
-/* Align social media icons in a row */
 .social-icons {
   display: flex;
   justify-content: center;
@@ -248,18 +204,13 @@ footer {
   margin-bottom: 20px;
 }
 
-/* Ensure social icons are the correct size */
 .social-icons a img {
-  width: 50px; /* Adjust size as needed */
+  width: 60px;
   height: auto;
-  filter: brightness(0) invert(1); /* Makes them white in dark mode */
+  filter: brightness(0) invert(1);
 }
 
-/*
-==========================================
-GitHub Repository Button Styling
-==========================================
-*/
+/* GitHub Repository Button Styling */
 .repo-button {
   display: inline-block;
   margin-top: 10px;
@@ -281,8 +232,9 @@ GitHub Repository Button Styling
 #IFI-logo {
   display: block;
   margin: 0 auto;
-  width: 200px; /* Adjust the width as needed */
-  height: auto; /* Maintain aspect ratio */
+  width: 80%; /* Use percentage for responsive scaling */
+  max-width: 200px;
+  height: auto;
   border: 1px solid #fff;
   border-radius: 10%;
 }
@@ -291,12 +243,13 @@ GitHub Repository Button Styling
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 200px; /* Fixed width for the square */
-  height: 200px; /* Fixed height for the square */
+  width: 80%; /* Use percentage for responsive scaling */
+  max-width: 200px;
+  height: auto;
   margin: 0 auto;
   border: 1px solid #fff;
   border-radius: 10%;
-  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  box-sizing: border-box;
 }
 
 #MFLY-logo {
@@ -304,6 +257,8 @@ GitHub Repository Button Styling
   max-height: 90%;
   height: auto;
   width: auto;
+  padding-top: 73px;
+  padding-bottom: 73px;
 }
 
 .light-mode #MFLY-logo {
@@ -313,8 +268,211 @@ GitHub Repository Button Styling
 #UMich-logo {
   display: block;
   margin: 0 auto;
-  width: 200px; /* Adjust the width as needed */
-  height: auto; /* Maintain aspect ratio */
+  width: 80%; /* Use percentage for responsive scaling */
+  max-width: 200px;
+  height: auto;
   border: 1px solid #fff;
   border-radius: 10%;
+}
+
+#nyc-app-img{
+  display: block;
+  margin: 0 auto;
+  width: 80%; /* Use percentage for responsive scaling */
+  max-width: 200px;
+  height: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border-radius: 10%;
+}
+
+/* Confetti container styles */
+.confetti-container {
+  position: fixed;
+  top: 0;
+  width: 200px; /* Adjust width as needed */
+  height: 85%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 9999;
+}
+
+.confetti-container.left {
+  left: 0;
+}
+
+.confetti-container.right {
+  right: 0;
+}
+
+/* Confetti styles */
+.confetti {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #34E89E;
+  opacity: 0.8;
+  border-radius: 50%;
+  animation: fall linear infinite;
+}
+
+/* Confetti toggle button styles */
+.confetti-button {
+  position: fixed;
+  bottom: 20px;
+  right: 70px; /* Adjusted position to be next to the moon button */
+  background: none;
+  border: none;
+  border-radius: 50%;
+  color: rgba(185, 120, 255, 0.8);
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: color 0.3s;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Moon button styles */
+.moon-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px; /* Adjusted position */
+  background: none;
+  border: none;
+  border-radius: 50%;
+  color:  rgba(185, 120, 255, 0.8);
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: color 0.3s;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Back to Top Button styles */
+.back-to-top {
+  position: fixed;
+  bottom: 70px;
+  right: 20px; /* Adjusted position */
+  background: none;
+  border: none;
+  border-radius: 50%;
+  color:  rgba(185, 120, 255, 0.8);
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: color 0.3s;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none; /* Initially hidden */
+}
+
+/* Confetti fall animation */
+@keyframes fall {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}
+
+/* Hide confetti containers on smaller screens */
+@media (max-width: 768px) {
+  .confetti-container {
+    display: none;
+  }
+}
+
+/* Scroll down animation */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+.scroll-down {
+  display: inline-block;
+  animation: bounce 2s infinite;
+}
+
+/* Profile container styling */
+.profile-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* Circular text wrapper styling */
+.circular-text-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  width: 300px; /* Adjust width as needed */
+  height: 300px; /* Adjust height as needed */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+/* Circular text styling */
+.circular-text {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  animation: bounce 2s infinite; /* Apply bounce animation */
+}
+
+.circular-text a {
+  position: absolute;
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px; /* Adjust font size as needed */
+  font-weight: 600;
+  transition: color 0.3s;
+  border:#ffffff solid 2px;
+  padding: 5px;
+  background-color: #222;
+}
+
+.circular-text a:hover {
+  color: #34E89E; /* Change color on hover */
+  border-color: #34E89E;
+}
+
+/* Positioning the links on the left and right sides of the circle */
+.circular-text a:nth-child(1) {
+  transform: rotate(50deg) translate(170px) rotate(-45deg);
+}
+
+.circular-text a:nth-child(2) {
+  transform: rotate(145deg) translate(235px) rotate(-150deg);
+}
+
+.circular-text a:nth-child(3) {
+  transform: rotate(195deg) translate(210px) rotate(-200deg);
+}
+
+.circular-text a:nth-child(4) {
+  transform: rotate(340deg) translate(120px) rotate(-330deg);
 }
