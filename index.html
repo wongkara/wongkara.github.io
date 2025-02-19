@@ -102,12 +102,16 @@
     
             <!-- Innovation for Impact Lore -->
             <div class="job">
-                <h3>Software Developer</h3>
+                <h3>Software Developer — <i>Lore</i></h3>
                 <p>Innovation for Impact | Jan 2025 - Present</p>
                 <ul>
-                    <li>Developing Lore, a mobile app powered by React Native, Node.js, Express.js, and MongoDB,
-                         designed for friends to capture, share, and relive quotes, photos, memories, and more.</li>
-                    <li>Built a personal portfolio (this website) using HTML/CSS and JavaScript</li>
+                    <li>Develop <i>Lore</i>, a mobile app that enables users to capture, share, and relive memories, quotes, and photos</li>
+                    <li>Implement front-end with React Native and JavaScript to create an intuitive and engaging user experience</li>
+                    <li>Build back-end services with Node.js and Express.js, ensuring seamless data flow and API performance</li>
+                    <li>Design a dynamic quote board feature while conducting usability testing</li>
+                    <li>Manage MongoDB databases for content storage, retrieval, and scalability</li>
+                    <li>Collaborate with a cross-functional team to align technical development with design objectives and user needs</li>
+                </ul>
                 </ul>   
                 <img src="website/icons/IFI.jpeg" alt="Innovation for Impact Logo" id="IFI-logo" />           
             </div>
@@ -117,9 +121,10 @@
                 <h3>Object Detection Lead</h3>
                 <p>M-Fly Aero Design | Nov 2023 - Present</p>
                 <ul>
-                    <li>Developed a Python script to preprocess and format image data into the COCO dataset format, enabling its 
-                        use in object detection and classification tasks for autonomous competition aircraft</li>
-                    <li>Troubleshooting and refining OpenCV and YOLO computer vision algorithms</li>
+                    <li>Developed Python script to preprocess 10,000+ aerial images into Common Objects in Context (COCO) format</li>
+                    <li>Refine object detection models using YOLO and OpenCV, analyzing performance across test images</li>
+                    <li>Assist bounding box processing, verifying detections and refining object localization results</li>
+                    <li>Collaborate weekly with subteam to analyze model performance and improve detection accuracy</li>
                 </ul>
                 <div class="logo-wrapper">
                     <img src="website/icons/mfly.png" alt="M-Fly Logo" id="MFLY-logo" />
@@ -131,66 +136,69 @@
                 <h3>Research Intern</h3>
                 <p>University of Michigan | Sep 2023 - Apr 2024</p>
                 <ul>
-                    <li>Designed and tested IoT prototypes for an efficient net-zero building automation system under the guidance of Dr. Lars Junghans</li>
-                    <li>Developed a Python script to collect CO2, humidity, and temperature sensor data via Raspberry Pi GPIO</li>
-                    <li>Selected specialized hardware to be purchased for project purposes</li>
-                    <li>Aided research team in preliminary MQTT implementation for node-to-node communication and window actuator fabrication</li>
+                    <li>Prototyped IoT climate management system for 22/26 Midwest, with potential HVAC energy savings of 30-50%</li>
+                    <li>Developed Python script to process 17,000+ RPi GPIO sensor readings daily for real-time environment monitoring</li>
+                    <li>Researched, selected, and integrated 5+ hardware components for seamless operation with sub-second response</li>
+                    <li>Implemented MQTT communication protocols, enabling sub-second latency in real-time sensor data transmission</li>
+                    <li>Assisted fabrication of window actuator system, automating ventilation adjustments based on sensor feedback</li>
+                    <li>Authored and presented research poster to 140+ attendees at MRADS Spring Research Symposium</li>
                 </ul>  
-                <img src="website/icons/umich.png" alt="University of Michigan Logo" id="UMich-logo" />    
+                
+                <!-- Clickable Thumbnail Image -->
+                <img 
+                    src="website/icons/poster.png" 
+                    alt="22/26 Midwest Poster presented at Michigan Research and Discovery Scholars Research Symposium in April 2024" 
+                    class="project-poster" 
+                    id="posterImg"
+                />
             </div> 
         </section>
     
-        <!-- Projects Section -->
     <!-- Projects Section -->
     <section id="projects">
         <h2>Projects</h2>
 
-
-        <!-- Lore -->
-        <div class="project">
-            <h3>Lore (2025)</h3>
-            <p>
-                A mobile app to help users share memories, quotes, and photos. 
-                Handling front-end programming with React Native and JavaScript, and back-end services using Node.js and Express.js. 
-                Designing and integrating a dynamic quote board feature and conducting usability testing to enhance user experience. 
-                Managing database with MongoDB for efficient content storage and retrieval. Collaborating with a cross-functional team 
-                on both technical and design aspects. Work in progress.
-            </p>
-            <a href="javascript:void(0);" target="_blank" class="repo-button">Check back soon to view repository!</a>
-        </div>
-
-        <!-- German Club Website -->
+        <!-- Personal Portfolio -->
         <div class="project">
             <h3>University of Michigan German Club Website (2025)</h3>
-            <p>Building a website in HTML/CSS and JavaScript to promote the German Club’s events, interests, and purposes. 
+            <p> Complete overhaul of club website to enhance event promotion and member engagement. 
+                Design and implement responsive front-end UI with dynamic elements using HTML, CSS, and JavaScript. 
+                Develop interactive features including an event calendar, photo gallery, and real-time announcements.
                 Work in progress.</p>
-                <a href="javascript:void(0);" target="_blank" class="repo-button">Check back soon to view repository!</a>
+                <a target="_blank" class="repo-button">Check back soon to view repository!</a>
         </div>
 
-                <!-- COCO Formatting Project with GitHub Link -->
+                <!-- German Club Website -->
+        <div class="project">
+            <h3>Personal Portfolio (2025)</h3>
+            <p>
+                Built a responsive, mobile-friendly personal portfolio (this website!) using HTML, CSS, and JavaScript. 
+                Integrated smooth scrolling, navigation controls, and confetti animations for an engaging user experience. 
+                Implemented dark and light mode as accessibility features to improve user experience.
+            </p>            
+                <a href="https://github.com/wongkara/wongkara.github.io/tree/main" target="_blank" class="repo-button">View Repository</a>
+        </div>
+
+        <!-- COCO Formatting Project with GitHub Link -->
         <div class="project">
             <h3>COCO Formatting for Object Detection (2024)</h3>
             <p>A Python script to preprocess and organize image data into the Common Objects in Context (COCO) dataset format, making 
                 it suitable for object detection and classification tasks in autonomous aircraft competition.</p>
             <a href="https://github.com/wongkara/m-fly-coco-formatter/tree/main" target="_blank" class="repo-button">View Repository</a>
         </div>    
-        
-                <!-- 22/26 Midwest Project -->
+
+        <!-- Image Processor -->
         <div class="project">
-            <h3>22/26 Midwest: Net Zero Emission Strategy for Buildings (2024)</h3>
+            <h3>Image Processor (2024)</h3>
             <p>
-              A Raspberry Pi and MQTT prototype of the existing 22/26 climate management system that can be 
-              implemented in a carbon-neutral home tailored to the climate and prevailing construction 
-              techniques of the Midwestern United States. Created poster summarizing research outcomes 
-              and presented findings at Spring Research Symposium.
+                Implemented seam carving to intelligently resize images while preserving key visual content. 
+                Optimized energy function calculations for improved seam selection and artifact reduction. 
+                Designed modular C++ structures for handling multi-channel image processing with RGB matrices. 
+                Developed an efficient CLI tool supporting PPM image format for automated resizing tasks. 
+                Integrated error handling and input validation to ensure robust image processing operations.
             </p>
-            <!-- Clickable Thumbnail Image -->
-            <img 
-              src="website/icons/poster.png" 
-              alt="22/26 Midwest Poster presented at Michigan Research and Discovery Scholars Research Symposium in April 2024" 
-              class="project-poster" 
-              id="posterImg"
-            />
+            
+            <a target="_blank" class="repo-button">Contact me to view repository!</a>
         </div>
 
         <!-- NYC WiFi Locator -->
@@ -200,7 +208,6 @@
                 User inputs a valid New York City zip code, which returns a formatted list of relevant information pertaining to public 
                 Wi-Fi locations in the specified zip code area.</p>
                 <a href="https://github.com/wongkara/nyc-wifi-locator/tree/main" target="_blank" class="repo-button">View Repository</a>
-                <img src="website/icons/nyc.png" alt="NYC App Image" id="nyc-app-img" />   
         </div>
     </section>
         
