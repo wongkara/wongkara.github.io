@@ -1,16 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-    /** 
-     * Fade-in effect for project sections 
-     * Ensures each project fades in sequentially with a small delay.
-     */
-    const projects = document.querySelectorAll(".project");
-    projects.forEach((project, index) => {
-        project.style.opacity = "0"; // Initially hide the project
-        setTimeout(() => {
-            project.style.transition = "opacity 0.5s ease-in-out";
-            project.style.opacity = "1"; // Gradually show the project
-        }, index * 200); // Delay increases per project
-    });
 
     /** 
      * Theme Toggle for Dark Mode
@@ -42,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
         };
     }
 
-    // Close the modal when the close button (×) is clicked
+    // Close the modal when the close button is clicked
     if (closeBtn) {
         closeBtn.onclick = function () {
             modal.style.display = "none";
@@ -89,8 +77,23 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    // Toggle confetti on window resize
-    window.addEventListener('resize', toggleConfetti);
+    /** 
+     * Confetti Toggle Button Logic 
+     * Toggles the confetti on and off when the button is clicked.
+     */
+    const confettiToggle = document.getElementById("confetti-toggle");
+    let confettiEnabled = false;
+
+    confettiToggle.addEventListener("click", () => {
+        confettiEnabled = !confettiEnabled;
+        if (confettiEnabled) {
+            createConfetti(confettiContainerLeft);
+            createConfetti(confettiContainerRight);
+        } else {
+            confettiContainerLeft.innerHTML = '';
+            confettiContainerRight.innerHTML = '';
+        }
+    });
 
     /** 
      * Back to Top Button Logic 
@@ -111,24 +114,6 @@ document.addEventListener("DOMContentLoaded", () => {
             top: 0,
             behavior: "smooth"
         });
-    });
-
-    /** 
-     * Confetti Toggle Button Logic 
-     * Toggles the confetti on and off when the button is clicked.
-     */
-    const confettiToggle = document.getElementById("confetti-toggle");
-    let confettiEnabled = false;
-
-    confettiToggle.addEventListener("click", () => {
-        confettiEnabled = !confettiEnabled;
-        if (confettiEnabled) {
-            createConfetti(confettiContainerLeft);
-            createConfetti(confettiContainerRight);
-        } else {
-            confettiContainerLeft.innerHTML = '';
-            confettiContainerRight.innerHTML = '';
-        }
     });
 
     /** 
