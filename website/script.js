@@ -1,9 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    /** 
-     * Theme Toggle for Dark Mode
-     * Toggles the "light-mode" class on the body when the button is clicked.
-     */
+    // Theme Toggle for Dark Mode
     const themeToggle = document.getElementById("theme-toggle");
     if (themeToggle) {
         themeToggle.addEventListener("click", () => {
@@ -11,10 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    /** 
-     * Modal Logic for Poster Image 
-     * Allows the project poster image to open in a fullscreen modal view.
-     */
+    // Modal Logic for Poster Image 
     const modal = document.getElementById("imgModal");
     const img = document.getElementById("posterImg");
     const modalImg = document.getElementById("modalImage");
@@ -23,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Open modal when the poster image is clicked
     if (img && modal) {
-        img.onclick = function () {
+        img.onclick = function() {
             modal.style.display = "block";
             modalImg.src = this.src;
             captionText.innerHTML = this.alt;
@@ -32,24 +26,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Close the modal when the close button is clicked
     if (closeBtn) {
-        closeBtn.onclick = function () {
+        closeBtn.onclick = function() {
             modal.style.display = "none";
         };
     }
 
     // Close the modal when clicking anywhere outside the modal image
     if (modal) {
-        modal.addEventListener("click", function (event) {
+        modal.addEventListener("click", function(event) {
             if (event.target === modal) {
                 modal.style.display = "none";
             }
         });
     }
 
-    /** 
-     * Confetti Logic 
-     * Generates and animates confetti on the left and right margins.
-     */
+    // Confetti Logic 
     const confettiCount = 50; // Adjust the number of confetti pieces
     const confettiContainerLeft = document.querySelector('.confetti-container.left');
     const confettiContainerRight = document.querySelector('.confetti-container.right');
@@ -77,10 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    /** 
-     * Confetti Toggle Button Logic 
-     * Toggles the confetti on and off when the button is clicked.
-     */
+    // Confetti Toggle Button Logic 
     const confettiToggle = document.getElementById("confetti-toggle");
     let confettiEnabled = false;
 
@@ -95,10 +83,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    /** 
-     * Back to Top Button Logic 
-     * Shows the button when the user scrolls down and scrolls to the top when clicked.
-     */
+    // Back to Top Button Logic 
     const backToTopButton = document.getElementById("back-to-top");
 
     window.addEventListener("scroll", () => {
@@ -116,11 +101,9 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    /** 
-     * Smooth Scrolling for Circular Text Links
-     */
+    // Smooth Scrolling for Circular Text Links
     document.querySelectorAll('.circular-text a').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
+        anchor.addEventListener('click', function(e) {
             e.preventDefault();
             document.querySelector(this.getAttribute('href')).scrollIntoView({
                 behavior: 'smooth'
