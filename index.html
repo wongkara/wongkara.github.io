@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Import Poppins font from Google Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
         
@@ -35,14 +36,14 @@
                     </div>
                 </div>
             </div>
-            <p>Computer Engineering @ University of Michigan</p>
-            <p>SWE Intern @ Everstory</p>
-            <p>I'm an aspiring Computer Engineer from the Detroit Metropolitan Area.<br>
-                I'm interested in full-stack development, systems software, and embedded systems.<br>
-                Currently, I build full-stack systems for Everstory, an early learning encyclopedia startup.<br>
-                Previously, I worked under a professor as research intern for an embedded IoT project. <br>
-                When I'm not programming, I enjoy aviation, speaking German, and staring at maps.<br>
-            </p>
+            <p style="color: rgba(185, 120, 255, 0.8)">Computer Engineering @ University of Michigan '27</p>
+            <div class="bio">
+                <p>I'm interested in systems software, full-stack dev, and embedded systems.
+                    Currently, I build full-stack systems as a SWE intern for an ed-tech startup.
+                    Previously, I built an IoT climate system as a research intern.
+                    When I'm not coding, I enjoy speaking German and staring at maps.
+                </p>
+            </div>
             <button id="theme-toggle" class="moon-button"><i class="fas fa-moon"></i></button>
             <button id="confetti-toggle" class="confetti-button"><i class="fas fa-magic"></i></button>
             <h1 class="scroll-down">↓↓↓ learn more ↓↓↓</h1>
@@ -109,13 +110,14 @@
           
         <!-- Experience Section -->
         <section id="experience">
-            <h2>Employment</h2>
+            <h2>Employment/Experience</h2>
 
             <!-- Everstory -->
             <div class="job">
                 <h3>Software Engineer Intern</h3>
                 <p>Everstory | May 2025 - Present</p>
                 <ul>
+                    <li style="color:coral">Tech Stack: AWS, Docker, Supabase, FastAPI, Python, React, Tailwind, TypeScript, Vite </li>
                     <li>Built full-stack authentication system for early learning encyclopedia app, enabling access for up to 50,000 users</li>
                     <li>Developed MapLibre/OSM map with clickable markers and zoom control to visualize geospatial database content</li>
                     <li>Designed PostgreSQL schema to efficiently manage encyclopedia entries, location tags, and user history</li>
@@ -133,8 +135,8 @@
             <div class="job">
                 <h3>Research Intern</h3>
                 <p>University of Michigan | Sep 2023 - Apr 2024</p>
-                <p>Python, Raspberry Pi</p>
                 <ul>
+                    <li style="color:coral">Tech Stack: Python, Raspberry Pi</li>
                     <li>Prototyped 22/26 Midwest embedded IoT climate management system with potential 30% HVAC energy savings</li>
                     <li>Developed script to process 17,000+ RPi GPIO I2C sensor readings daily for real-time environment monitoring</li>
                     <li>Performed economic analysis to research, purchase, and integrate four sensors, microcontrollers, and relays</li>
@@ -157,6 +159,7 @@
                 <h3>Software Developer </h3>
                 <p>Innovation for Impact | Jan 2025 - Present</p>
                 <ul>
+                    <li style="color:coral"> Tech Stack: JavaScript, React Native, CSS, Expo/Node.js, Python, Django REST, PostgreSQL</li>
                     <li>Develop <i>Lore</i>, a mobile app that enables users to capture, share, and relive memories, quotes, and photos</li>
                     <li>Built seven fully functional mobile screens based on Figma UI mockups and tested them using Android Emulator</li>
                     <li>Integrated RESTful API services with Google OAuth and JWT-based session handling for user authentication</li>
@@ -172,7 +175,7 @@
                 <h3>Object Detection Lead</h3>
                 <p>M-Fly Aero Design | Nov 2023 - Apr 2025</p>
                 <ul>
-                    <li>Developed script to preprocess 10,000+ aerial images and convert annotations into COCO format</li>
+                    <li>Developed Python script to preprocess 10,000+ aerial images and convert annotations into COCO format</li>
                     <li>Processed and validated bounding boxes for 15 different objects, refining localization and detection reliability</li>
                     <li>Collaborated weekly with a five-person subteam to evaluate CV model performance and boost detection accuracy</li>
                 </ul>

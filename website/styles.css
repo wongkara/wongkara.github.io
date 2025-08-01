@@ -35,7 +35,6 @@ section {
 /* Header Section */
 header {
   text-align: center;
-  padding: 40px 0;
 }
 
 /* Profile picture styling */
@@ -46,6 +45,10 @@ header {
   border-radius: 50%;
   margin: 20px 0;
   border: #222 solid 4px;
+}
+
+.bio {
+  max-width: 700px;
 }
 
 /* Button Styling */
@@ -107,7 +110,7 @@ button:hover {
   border-radius: 10px;
 }
 
-/* Experience Section (Job Listings) */
+/* Experience Section */
 .job ul {
   padding-left: 0;
   list-style: none;
@@ -115,6 +118,10 @@ button:hover {
 
 .job ul li {
   margin-bottom: 10px;
+}
+
+.job p {
+  color: rgba(185, 120, 255, 0.8);
 }
 
 .job, .project {
@@ -394,7 +401,7 @@ footer {
 }
 
 /* Hide confetti containers on smaller screens */
-@media (max-width: 768px) {
+@media (max-width: 1050px) {
   .confetti-container {
     display: none;
   }
@@ -414,7 +421,6 @@ footer {
 }
 
 .scroll-down {
-  display: inline-block;
   animation: bounce 2s infinite;
 }
 
@@ -480,4 +486,61 @@ footer {
 
 .circular-text a:nth-child(4) {
   transform: rotate(340deg) translate(120px) rotate(-330deg);
+}
+
+/* Tablet and small-laptop breakpoint (1024 px) */
+@media (max-width: 1024px) {
+  h1       { font-size: 2rem; }
+  h2       { font-size: 1.5rem; }
+  h3       { font-size: 1.25rem; }
+
+  .job,
+  .project {
+    max-width: 90%;
+  }
+
+}
+
+/* Large phone / tablet breakpoint (768 px) */
+@media (max-width: 768px) {
+  body         { padding: 0 8px; } 
+  section      { margin: 32px 0; }
+  .skills-container,
+  .coursework-container {
+    gap: 10px;
+  }
+
+  /* buttons flow two-per-row instead of three-plus */
+  .skill       { flex: 1 1 45%; }
+
+  /* cards fill width */
+  .job,
+  .project     { max-width: 100%; }
+
+  /* reposition floating buttons so they stay visible */
+  .moon-button,
+  .confetti-button,
+  .back-to-top {
+    right: 10px;
+  }
+}
+
+/* Phone breakpoint (480 px) */
+@media (max-width: 480px) {
+  h1       { font-size: 1.75rem; }
+  h2       { font-size: 1.35rem; }
+  h3       { font-size: 1.15rem; }
+  p, li,
+  button,
+  .skill   { font-size: 0.9rem; }
+
+  /* single-column chips for very narrow screens */
+  .skill   { flex: 1 1 100%; }
+
+  /* shrink profile image further */
+  #profile-pic            { max-width: 200px; }
+  .circular-text-wrapper  { width: 150px; height: 150px; }
+
+  /* keep modal images inside viewport */
+  .modal-content          { width: 90%; }
 }
