@@ -58,7 +58,7 @@ header {
 }
 
 .bio {
-	max-width: 600px;
+	max-width: 700px;
 	line-height: 1;
 }
 
@@ -212,11 +212,9 @@ button:hover {
 
 /* Footer & Social Icons */
 footer {
-	padding: 20px;
 	font-size: 14px;
 	width: 100%;
 	text-align: center;
-	margin-top: 50px;
 }
 
 .social-icons {
@@ -260,7 +258,7 @@ footer {
 	padding-bottom: 67px;
 }
 
-#IFI-logo {
+#IBM-logo, #newhaptics-logo {
 	display: block;
 	margin: 0 auto;
 	width: 80%;
@@ -281,40 +279,6 @@ footer {
 	border: 1px solid #fff;
 	border-radius: 10%;
 	box-sizing: border-box;
-}
-
-#MFLY-logo {
-	max-width: 90%;
-	max-height: 90%;
-	height: auto;
-	width: auto;
-	padding-top: 73px;
-	padding-bottom: 73px;
-}
-
-.light-mode #MFLY-logo {
-	filter: invert(1);
-}
-
-#UMich-logo {
-	display: block;
-	margin: 0 auto;
-	width: 80%;
-	max-width: 200px;
-	height: auto;
-	border: 1px solid #fff;
-	border-radius: 10%;
-}
-
-#nyc-app-img {
-	display: block;
-	margin: 0 auto;
-	width: 80%;
-	max-width: 200px;
-	height: auto;
-	margin-top: 25px;
-	margin-bottom: 25px;
-	border-radius: 10%;
 }
 
 /* Confetti container styles */
@@ -559,10 +523,9 @@ footer {
 
 	/* buttons flow two-per-row instead of three-plus */
 	.languages, 
-  .libraries,
-  .cloud,
-  .tools,
-  .coursework {
+	.embedded,
+	.hardware,
+	.coursework {
 		flex: 1 1 45%;
 	}
 
