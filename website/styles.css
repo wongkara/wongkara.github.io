@@ -1,0 +1,496 @@
+/* global styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 320px;
+    overflow-x: hidden;
+}
+
+/* prevents horizontal scroll on mobile */
+html {
+  overflow-x: hidden;
+}
+
+/* headings */
+h1,
+h2,
+h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #34E89E;
+}
+
+/* tighten header spacing (teal, purple, orange in job descs */
+.job h3, .project h3 { margin-bottom: 5px; }
+.job p, .project p { margin-top: 5px; margin-bottom: 5px; }
+
+/* paragraphs, buttons, and list items */
+p,
+button,
+li {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+/* uniform section spacing */
+section {
+    margin: 40px 0;
+}
+
+/* header section */
+header {
+    text-align: center;
+}
+
+/* profile picture styling */
+#profile-pic {
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 50%;
+    margin: 20px 0;
+    border: #222 solid 4px;
+}
+
+.bio {
+    max-width: 700px;
+    line-height: 1.5;
+}
+
+/* button styling */
+button {
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+button:hover {
+    background: #fff;
+    color: #111;
+}
+
+/* light mode styling */
+.light-mode {
+    background-color: #fff;
+    color: #111;
+}
+
+.light-mode .project,
+.light-mode .job {
+    background-color: rgba(227, 227, 227, 0.8);
+}
+
+.light-mode button {
+    border: 1px solid #111;
+    color: #111;
+}
+
+.light-mode button:hover {
+    background: #111;
+    color: #fff;
+}
+
+.light-mode .social-icons a img {
+    filter: none;
+}
+
+/* skills & coursework containers */
+.skills-container,
+.coursework-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.coursework-container .skill {
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+/* Experience & Project Cards */
+.job,
+.project {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 650px;
+    transition: transform 0.3s ease-in-out;
+    text-align: left;
+    margin: 20px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.job p {
+    color: rgba(185, 120, 255, 0.8);
+}
+
+/* Bullets and lists */
+.job ul,
+.project ul {
+    padding-left: 20px;
+    list-style: disc;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.job ul li,
+.project ul li {
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+/* Pixel-perfect bottom alignment */
+.job > *:last-child,
+.project > *:last-child,
+.job ul li:last-child,
+.project ul li:last-child {
+    margin-bottom: 0;
+}
+
+/* project posters thumbnails */
+.project-poster {
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    margin: 35px auto; 
+    padding: 8px;
+    box-sizing: border-box; 
+    cursor: pointer;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    align-self: center;
+}
+
+.project-poster:hover {
+    transform: scale(1.05);
+}
+
+/* modal styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    display: block;
+    margin: 60px auto;
+    width: 80%;
+    max-width: 800px;
+}
+
+#caption {
+    text-align: center;
+    color: #ccc;
+    margin: 10px auto 30px;
+    width: 80%;
+    max-width: 800px;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #bbb;
+}
+
+/* footer & social icons */
+footer {
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.social-icons a img {
+    width: 60px;
+    height: auto;
+    filter: brightness(0) invert(1);
+}
+
+/* repo button styling */
+.repo-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #fff;
+    color: #111;
+    border: 1px solid #111;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: 0.3s, color 0.3s;
+    align-self: flex-start;
+}
+
+.repo-button:hover {
+    background-color: #111;
+    color: #fff;
+}
+
+#everstory-logo {
+    max-width: 90%;
+    max-height: 90%;
+    height: auto;
+    width: auto;
+    padding-top: 67px;
+    padding-bottom: 67px;
+}
+
+#IBM-logo, #newhaptics-logo {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 200px;
+    height: auto;
+    border: 1px solid #fff;
+    border-radius: 10%;
+}
+
+.logo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    max-width: 200px;
+    height: auto;
+    margin: 0 auto;
+    border: 1px solid #fff;
+    border-radius: 10%;
+    box-sizing: border-box;
+}
+
+/* confetti logic */
+.confetti-container {
+    position: fixed;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.confetti-container.left { left: 0; }
+.confetti-container.right { right: 0; }
+
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #34E89E;
+    opacity: 0.8;
+    border-radius: 50%;
+    animation: fall linear infinite;
+}
+
+/* floating buttons */
+.confetti-button, .moon-button, .back-to-top {
+    position: fixed;
+    right: 20px;
+    background: #a05be7;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 9999;
+    transition: transform 0.3s;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.confetti-button { bottom: 20px; }
+.moon-button { bottom: 70px; }
+.back-to-top { bottom: 120px; display: none; }
+
+.moon-button:hover,
+.confetti-button:hover,
+.back-to-top:hover {
+    transform: scale(1.1);
+}
+
+.skills-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* animations */
+@keyframes fall {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(100vh); }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-10px); }
+    60% { transform: translateY(-5px); }
+}
+
+.scroll-down {
+    animation: bounce 2s infinite;
+}
+
+/* profile circular wrapper */
+.profile-container {
+    position: relative;
+    display: inline-block;
+}
+
+.circular-text-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.circular-text {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    animation: bounce 2s infinite;
+}
+
+.circular-text a {
+    position: absolute;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    transition: color 0.3s;
+    border: #ffffff solid 2px;
+    padding: 5px;
+    background-color: #222;
+}
+
+.circular-text a:nth-child(1) { transform: rotate(50deg) translate(170px) rotate(-45deg); }
+.circular-text a:nth-child(2) { transform: rotate(145deg) translate(235px) rotate(-150deg); }
+.circular-text a:nth-child(3) { transform: rotate(195deg) translate(210px) rotate(-200deg); }
+.circular-text a:nth-child(4) { transform: rotate(340deg) translate(120px) rotate(-330deg); }
+
+/* breakpoints */
+@media (max-width: 1200px) {
+    .confetti-container { display: none; }
+    .confetti-button { display: none; }
+}
+
+@media (max-width: 1024px) {
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.5rem; }
+    h3 { font-size: 1.25rem; }
+    .job, .project { max-width: 90%; }
+}
+
+@media (max-width: 768px) {
+    body { padding: 0 8px; }
+    section { margin: 32px 0; }
+    .skills-container, .coursework-container { gap: 10px; }
+    .job, .project { max-width: 100%; }
+    .moon-button, .confetti-button, .back-to-top { right: 10px; }
+}
+
+@media (max-width: 480px) {
+    h1 { font-size: 1.75rem; }
+    h2 { font-size: 1.35rem; }
+    h3 { font-size: 1.15rem; }
+    p, li, button, .skill { font-size: 0.9rem; }
+
+    /* hide confetti button completely on mobile */
+    .confetti-button { visibility: hidden; display: none !important; }
+
+    /* safari overlap fix */
+    .moon-button {
+        bottom: 110px; 
+        right: 20px;
+        width: 60px;
+        height: 60px;
+    }
+  
+    .back-to-top {
+        bottom: 180px; 
+        right: 20px;
+        width: 60px;
+        height: 60px;
+    }
+
+    #profile-pic { max-width: 200px; }
+
+    /* circular buttons stacked for mobile */
+    .circular-text a:nth-child(1),
+    .circular-text a:nth-child(2),
+    .circular-text a:nth-child(3),
+    .circular-text a:nth-child(4) {
+        transform: none;
+        position: static;
+        display: inline-block;
+        margin: 5px auto;
+    }
+
+    .circular-text-wrapper {
+        position: static;
+        transform: none;
+        width: auto;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .modal-content { width: 90%; }
+}

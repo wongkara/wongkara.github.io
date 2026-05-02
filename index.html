@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="website/styles.css">
+    <script defer src="website/script.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="confetti-container left"></div>
+    <div class="confetti-container right"></div>
+
+    <button id="back-to-top" class="back-to-top"><i class="fas fa-chevron-up"></i></button>
+
+    <header>
+        <h1>Hi, I'm Kara Wong!</h1>
+        <div class="profile-container">
+            <img src="website/icons/me.jpeg" alt="Photo of Kara Wong" id="profile-pic" />
+            <div class="circular-text-wrapper">
+                <div class="circular-text">
+                    <a href="#programming">Skills</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+        <p style="color: rgba(185, 120, 255, 0.8)">Computer Engineering @ University of Michigan</p>
+        <div class="bio">
+            <p>I'm a rising senior interested in computer architecture and embedded systems.</p>
+            <p>Currently, I am working at IBM in Poughkeepsie, NY as a Hardware Developer Intern.</p>
+            <p>When I'm not coding, I enjoy ice skating, speaking German, and staring at maps.</p>
+        </div>
+        <button id="theme-toggle" class="moon-button"><i class="fas fa-moon"></i></button>
+        <button id="confetti-toggle" class="confetti-button"><i class="fas fa-magic"></i></button>
+        <h1 class="scroll-down">↓ see more ↓</h1>
+    </header>
+
+    <div class="skills-wrapper">
+        <section id="programming">
+            <h2>Programming & Scripting</h2>
+            <div class="skills-container">
+                <button class="skill">C</button>
+                <button class="skill">C++</button>
+                <button class="skill">Embedded C</button>
+                <button class="skill">ARM Assembly</button>
+                <button class="skill">Python</button>
+                <button class="skill">Bash</button>
+            </div>
+        </section>
+
+        <section id="hardware-design">
+            <h2>Hardware Design & Verification</h2>
+            <div class="skills-container">
+                <button class="skill">SystemVerilog</button>
+                <button class="skill">RTL Design</button>
+                <button class="skill">Synopsys DC</button>
+                <button class="skill">Synopsys VCS</button>
+                <button class="skill">ModelSim</button>
+                <button class="skill">Quartus Prime</button>
+                <button class="skill">Altera FPGA</button>
+            </div>
+        </section>
+
+        <section id="embedded">
+            <h2>Embedded Systems & Protocols</h2>
+            <div class="skills-container">
+                <button class="skill">STM32</button>
+                <button class="skill">Raspberry Pi</button>
+                <button class="skill">DMA</button>
+                <button class="skill">I2C</button>
+                <button class="skill">SPI</button>
+                <button class="skill">UART</button>
+                <button class="skill">MQTT</button>
+            </div>
+        </section>
+
+        <section id="tools">
+            <h2>Software Development Tools</h2>
+            <div class="skills-container">
+                <button class="skill">Git</button>
+                <button class="skill">Docker</button>
+                <button class="skill">Linux</button>
+                <button class="skill">Makefiles</button>
+            </div>
+        </section>
+
+        <section id="tools-hardware">
+            <h2>Hardware Development Tools</h2>
+            <div class="skills-container">
+                <button class="skill">KiCad</button>
+                <button class="skill">LTSpice</button>
+                <button class="skill">Oscilloscope</button>
+                <button class="skill">Logic Analyzer</button>
+            </div>
+        </section>
+
+        <section id="coursework">
+            <h2>Coursework</h2>
+            <div class="coursework-container">
+                <button class="skill">Computer Architecture</button>
+                <button class="skill">Advanced Embedded Systems</button>
+                <button class="skill">Embedded Systems Design</button>
+                <button class="skill">Computer Organization</button>
+                <button class="skill">Logic Design</button>
+                <button class="skill">Signals and Systems</button>
+                <button class="skill">Electronic Circuits</button>
+                <button class="skill">Data Structures & Algorithms</button>
+            </div>
+        </section>
+    </div>
+
+    <section id="experience">
+        <h2>Experience</h2>
+
+        <div class="job">
+            <h3>Hardware Developer Intern</h3>
+            <p>IBM | May 2026 - Aug 2026</p>
+            <p style="font-style:italic; color:coral">SystemVerilog, C, C++, Python</p>
+            <ul>
+                <li>Pre-silicon verification</li>
+            </ul>
+            <a href="http://ibm.com" target="_blank">
+                <img src="website/icons/logo-ibm-square.png" alt="IBM Logo" id="IBM-logo" />
+            </a>
+        </div>
+
+        <div class="job">
+            <h3>Software Developer</h3>
+            <p>NewHaptics | Aug 2025 - Mar 2026</p>
+            <p style="font-style:italic; color:coral">Python, Docker</p>
+            <ul>
+                <li>Led 4-person team to develop braille-accessible games for custom display hardware with 1,024 tactile dots</li>
+                <li>Leveraged custom HAL and Docker-based environment in PyCharm for hardware-independent testing</li>
+                <li>Set up GitHub with rulesets and Notion for task management, improving collaboration and version control</li>
+                <li>Reviewed all pull requests and enforced coding standards to ensure scalable, high-quality software delivery</li>
+                <li>Contributed software featured in company demos at CES and CSUN AT Conference 2026</li>
+            </ul>
+            <a href="https://www.newhaptics.com/" target="_blank">
+                <img src="website/icons/newhaptics-logo.jpg" alt="NewHaptics Logo" id="newhaptics-logo" />
+            </a>
+        </div>
+
+        <div class="job">
+            <h3>Hardware Research Assistant</h3>
+            <p>University of Michigan | Sep 2023 - Apr 2024</p>
+            <p style="font-style:italic; color:coral">Python, Embedded C, Raspberry Pi, I2C, MQTT</p>
+            <ul>
+                <li>Prototyped 22/26 Midwest embedded IoT climate management system with potential 30% HVAC energy savings</li>
+                <li>Created Python script processing 17,000+ daily I2C sensor readings on RPi for real-time environmental monitoring</li>
+                <li>Researched and integrated sensors, relays, and specialized hardware for air exchange and window actuator systems</li>
+                <li>Implemented MQTT network protocols to enable less than 1-second latency in real-time sensor data transmission</li>
+                <li>Authored and presented research poster to 140+ attendees at annual MRADS Spring Research Symposium</li>
+            </ul>
+            <img src="website/icons/2226_poster.png" alt="22/26 Midwest Poster presented at MRADS Research Symposium" class="project-poster" />
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>MIDI-Controlled Mechatronic Viola</h3>
+            <p style="font-style:italic; color:coral">Embedded C, STM32, DMA, SPI, UART (MIDI)</p>
+            <ul>
+                <li>Architected 80MHz interrupt-driven STM32 firmware system for control of 5 concurrent hardware peripherals</li>
+                <li>Engineered 0.02° resolution feedback control using a 17.5k CPR encoder to align 4 strings for solenoid actuation</li>
+                <li>Implemented master/slave timer synchronization to coordinate cycle-accurate stepper motor bowing</li>
+                <li>Offloaded 20-LED and OLED data streams to DMA and SPI to maintain real-time motion control loop execution</li>
+                <li>Fabricated 15+ custom parts, including a specialized bridge and 3D-printed mounts, to integrate robotic actuators</li>
+            </ul>
+            <a href="https://github.com/wongkara/viola" target="_blank" class="repo-button">Repo Link</a>
+            <img src="website/icons/viola_poster.jpg" alt="Poster presented at EECS 373 Expo" class="project-poster" />
+        </div>
+
+        <div class="project">
+            <h3>Out-of-Order RISC Processor</h3>
+            <p style="font-style:italic; color:coral">SystemVerilog, RTL Design, Makefile, Synopsys VCS, Synopsys DC</p>
+            <ul>
+                <li>Architected 2-way RISC pipeline with a micro-op queue to decouple instruction fetch from backend execution</li>
+                <li>Developed OoO execution engine with 3-issue window and hardware logic to resolve RAW/WAW/WAR hazards</li>
+                <li>Implemented split of register-offset loads/stores into discrete ADDI and memory micro-ops</li>
+                <li>Enabled non-blocking execution to allow independent ALU operations to bypass stalled memory load instructions</li>
+                <li>Integrated an instruction cache and 2-bank Branch Target Buffer (BTB) for predictive speculative execution</li>
+            </ul>
+        </div>
+    </section>
+
+    <div id="imgModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
+
+    <footer>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <div class="social-icons">
+                <a href="https://github.com/wongkara" target="_blank">
+                    <img src="website/icons/github.svg" alt="GitHub Icon">
+                </a>
+                <a href="https://www.linkedin.com/in/wongkara" target="_blank">
+                    <img src="website/icons/linkedin.svg" alt="LinkedIn Icon">
+                </a>
+                <a href="mailto:karawong@umich.edu">
+                    <img src="website/icons/gmail.svg" alt="Email Icon">
+                </a>
+            </div>
+            <p>© 2026 Kara Wong. All rights reserved.</p>
+        </section>
+    </footer>
+</body>
+
+</html>
